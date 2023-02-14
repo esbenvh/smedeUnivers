@@ -1,0 +1,20 @@
+<%- include("header")-%>
+<main>
+    <div><img src="./uploads/cat-2083492__340.jpg" alt="" /></div>
+
+    <div>
+        <h1>Upload fil</h1>
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="Upload" />
+        </form>
+    </div>
+    <div>
+        <h1>Slet fil</h1>
+        <form action="/deleteFile" method="post">
+            <button id="dltbtn" type="submit" class="dltbtn btn btn-primary" name="deleteButton" value="deleteButton">Delete file</button>
+        </form>
+    </div>
+</main>
+
+<%- include("footer")-%>
